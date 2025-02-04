@@ -156,6 +156,12 @@ span.i {
   text-decoration: none;
   text-align: center;
 }
+			.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: #262626;
+  padding: 01px;
+}
 	</style>
 </head>
 <body>
@@ -174,9 +180,10 @@ span.i {
           
         </div>
 		</div></div><button id="clickBtn">	
-	<div class="ac"><font size="2" color="#CCCCCC" face="verdana">&nbsp;Play | смотрим твзов <a target="github" href="/tv/play.html" title="твPlay"><span style=""> &#x25c0;</span> тvPlay </a>&nbsp;<a target="github" href="/tv/seriali.html" title="Seriali"><span style="color:#ffee10"> &#x25c0;</span> сериалы </a></font></div><br/>
-<div align="left">		
-<div class="link"><a target="github" href="https://1tv.live/#player" title="1">&thinsp;&#9658; CH 01</a>
+	<div class="ac"><font size="2" color="#CCCCCC" face="verdana">&nbsp;Play | смотрим твзов <a target="github" href="/tv/play.html" title="твPlay"><span style=""> &#x25c0;</span> тvPlay </a>&nbsp;<a target="github" href="/tv/seriali.html" title="Seriali"><span style="color:#ffee10"> &#x25c0;</span> сериалы </a></font></div></button><br/>
+<button id="clickBtn2">		
+<div class="grid-container"><div class="link">
+<a target="github" href="https://1tv.live/#player" title="1">&thinsp;&#9658; CH 01</a>
 <a target="github" href="/tv/1tvhd.html?autoplay=1" title="1">&thinsp;&#9658; CH 02</a>
 <a target="github" href="//ok.ru/videoembed/8822841482807?nochat=1&autoplay=1" title="1">&thinsp;&#9658; CH 03</a>
 <a target="github" href="//ok.ru/videoembed/8805166489315?nochat=1&autoplay=1" title="1">&thinsp;&#9658; CH 04</a>
@@ -216,6 +223,21 @@ span.i {
 		const clickBtn = document.getElementById("clickBtn");
 const popup = document.getElementById("popup");
 const closeBtn = document.getElementById("closeBtn");
+
+clickBtn.addEventListener('click', ()=>{
+    popup.style.display = 'block';
+});
+closeBtn.addEventListener('click', ()=>{
+    popup.style.display = 'none';
+});
+popup.addEventListener('click', ()=>{
+    popup.style.display = 'none';
+});
+		</script>
+					<script>
+		const clickBtn = document.getElementById("clickBtn2");
+const popup = document.getElementById("popup2");
+const closeBtn = document.getElementById("closeBtn2");
 
 clickBtn.addEventListener('click', ()=>{
     popup.style.display = 'block';
