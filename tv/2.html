@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><meta http-equiv="Permissions-Policy" content="interest-cohort=()"><meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /><meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Copyright" content="Copyright by 3OB" />
+<meta name="AUTHOR" content="3OB" />
+<title>XTRA CHANNELS</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="/telezov_files/smotrimtvzov.css" rel="stylesheet">
+<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js"></script> 
+	    <script>
+        (function() {
+            const detectDevTools = () => {
+                const threshold = 100;
+                const check = () => {
+                    const start = performance.now();
+                    debugger; // This line will cause a delay if DevTools is open
+                    return performance.now() - start > threshold;
+                };
+
+                if (check()) {
+                    emitEvent(true);
+                }
+            };
+
+            const emitEvent = (isOpen) => {
+                console.log(`DevTools is ${isOpen ? 'open' : 'closed'}`);
+                if (isOpen) {
+                    window.location.href = "https://example.com";
+                }
+            };
+
+            setInterval(detectDevTools, 500);
+                                debugger; // This line will cause a delay if DevTools is open
+
+        })();
+    </script>
+	<style>
+			.overlay {
+        position: absolute;
+        right: 18px; /* Position adjusted to the top right corner */
+        top: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+}
+		#myIframe {
+  position: relative; 
+  z-index: 0;
+}
+		.main {
+	width: 100%;
+	height: 100vh;
+	padding: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #00000050;
+	flex-direction: column;
+	opacity: 1;
+}
+
+#da,.fs-btn{
+        width: 100px; /* Reduced width from 160px to 100px */
+        height: 80px; /* Reduced height from 120px to 80px */
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+}
+.ab {
+	width: 100%;
+    height: 100%;
+	border-color: #262626;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+.fs-btn:hover{
+	background-color: #000000;
+	color:white;
+	border: 1px solid white;
+}
+#da:hover{
+	color:white;
+	border: 1px solid white;
+}
+.button-bar{
+	
+}      
+	/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #E8C300 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #ff0186;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+#popup{
+    display: none;
+}
+.popup-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(48,45,45,1.00 / 70%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.popup{
+    background-color: #333333;
+    padding: 5px 10px;
+    width: 75%;
+    border-radius: 5px;
+}
+.close-popup{
+    display: flex;
+    justify-content: flex-end;
+	text-align: center;
+}
+.close-popup a{
+    font-size: 1.2rem;
+    background-color: #FF2CB5;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: normal;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+}
+.popup > h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.popup > p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.popup-btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid rebeccapurple;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    transition: .2s all ease-in;
+}
+.popup-btn:hover{
+    background-color: rebeccapurple;
+    color: #fff;
+}
+			.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  background-color: #262626;
+  padding: 01px;
+}
+
+.link {
+  background-color:;
+  border: 0px;
+  padding: 0px;
+	text-decoration-color: antiquewhite;
+	text-decoration: none;
+  text-align: center;
+}
+	.clickBtn {
+  background-color: #262626;
+  border: 0px;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+}
+	</style>
+</head>
+<body>
+		<div class="overlay">
+				<div class="button-bar">
+					<button id="da">Disabled Ads</button><br/><button class="fs-btn" onclick="toggleFullscreen()">Fullscreen</button>
+					<div class="close-popup" id="closeBtn"><a target="github" href="#">[ X ]</a></div>
+			</div>
+				</div>
+    <div id="popup">
+        <div class="popup-container">
+            <div class="popup"> 
+<div style="position: relative;padding-bottom: 56.25%; padding-top: 0px; height: 0;"><iframe name="github" id="myIframe" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" src="" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div></div>
+</div></div>	
+	<div class="ac" align="center"><font size="2" color="#CCCCCC" face="verdana">&nbsp;Play | ultratv remote <a href="/tv/index.html" title="твPlay"><span style=""> &#x25c0;</span> тvPlay</a>&nbsp;<a href="/tv/xtram.html" title="xtra CHANNELS NOT WORKING ON SMART TVs"><span style="color:#ffee10" title="NOT WORKING ON TVs"> &#x25c0;</span> xtra.M</a></font><font size="2" color="#ffee10" face="verdana">CLICK on Disabled Ads </font><font size="2" color="#FF2CB5" face="verdana">FIRST</font></div><br/>
+<button id="clickBtn" class="clickBtn"><div class="container">
+	<div id="channels" class="content">
+	<ul><li><a target="github" href="/tv/playerjs.html?file=https://autopilot.catcast.tv/content/41331/index.m3u8" title="Hollywood" class="zov" >
+		<i class="icon zov_character"></i><br>КИНО<br>HD<br>КАНАЛ</a></li>
+	<li><a target="github" href="/tv/cinema.html?autoplay=1" title="CINEMA" class="tvzov">
+	<i class="icon tvzov_character"></i><br>CINEMA<br>HD<br>КАНАЛ</a></li>
+	<li><a target="github" href="/tv/playerjs.html?file=https://stream02.vnet.am/Kinopremera/mono.m3u8" title="КИНОПРЕМЬЕРА" class="zov" >
+	 <i class="icon zov_character"></i><br>КАНАЛ<br>КИНО<br>Премьера</a></li>
+	<li><a target="github" href="/tv/playerjs.html?file=https://msk2.peers.tv/streaming/tv21/16/tvrecw/playlist.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJhY2Nlc3MiLCJleHAiOjE3MzY2OTI1OTUsImlhdCI6MTczNjYwNjE5NSwiY2lkIjo4MSwidWlkIjo4ODE4NzI2NzksInJlZyI6ZmFsc2UsImlwIjoxNjA0NTc4NjQxfQ.rH3JsbEeoeygKz9AgZJRNUBX2VB2b8jNr7DVn-4uExs" title="КИНО 21" class="telezov" >
+	 <i class="icon telezov_character"></i><br>ТВ<br>КАНАЛ<br>КИНО21</a></li>
+	<li><a target="github" href="https://ok.ru/videoembed/9172152032886?autoplay=1" title="КИНОМИКС" class="zov" >
+	 <i class="icon zov_character"></i><br>КАНАЛ<br>КИНО<br>МИКС</a></li>
+	<li><a target="github" href="https://ok.ru/videoembed/9172620222070?autoplay=1" title="RETRO КИНО" class="zovtv" >
+	 <i class="icon zovtv_character"></i><br>RETRO<br>КИНО<br>КАНАЛ</a></li>
+	<li><a target="github" href="/tv/playerjs.html?file=https://stream01.vnet.am/MujskoeKino/tracks-v1a1/mono.ts.m3u8" title="Мужское КИНО" class="zov">
+	 <i class="icon zov_character"></i><br>КАНАЛ<br>Мужское<br>КИНО</a></li>
+	<li><a target="github" href="/tv/playerjs.html?file=https://a4.cdntv.online/high/bc7shj5efa/514.m3u8" title="Родное КИНО" class="tele3" >
+	 <i class="icon tele3_character"></i><br>КАНАЛ<br>Родное<br>КИНО</a></li>
+	<li><a target="github" href="https://ok.ru/videoembed/9270384270966?autoplay=1" title="КАНАЛ КИНО XИT" class="zov">
+	 <i class="icon zov_character"></i><br>КАНАЛ<br>XИT<br>КИНО</a></li>
+	<li><a target="github" href="/tv/playerjs.html?file=https://live-3.otcnet.ru/kinotvplus4/tracks-v1a1/mono.m3u8" title="КИНО ТВ КАНАЛ" class="tele2" >
+	 <i class="icon tele2_character"></i><span></span><br>КИНО<br>Улитка<br>КАНАЛ</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://autopilot.catcast.tv/content/40783/index.m3u8" title="КИНОКАНАЛ" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>КИНО<br>КАНАЛ<br>Утка</a></li>	
+		<li><a target="github" href="/tv/playerjs.html?file=https://stream.ads.ottera.tv/playlist.m3u8?network_id=3391" title="КИНО DROM" class="tele1" >
+	 <i class="icon tele1_character"></i><span></span><br>КАНАЛ<br>КИНО<br>ДРОМ</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://cdntv.online/high/pa3nc5dxwz/123.m3u8" title="КИНОСЕМЬЯ" class="tele3" >
+	 <i class="icon tele3_character"></i><span></span><br>КАНАЛ<br>КИНО<br>СЕМЬЯ</a></li>	
+		<li><a target="github" href="/tv/playerjs.html?file=https://cdntv.online/high/pa3nc5dxwz/119.m3u8" title="КИНОКомедия" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>КАНАЛ<br>КИНО<br>Комедия</a></li>
+		<li><a target="github" href="https://ok.ru/videoembed/9172611112566?autoplay=1" title="КИНОМАН" class="tvzov" >
+	 <i class="icon tvzov_character"></i><span></span><br>КАНАЛ<br>КИНО<br>МАН</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://autopilot.catcast.tv/content/41333/index.m3u8" title="КИНО Action+" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>КАНАЛ<br>ДОМ<br>КИНО</a></li>
+		<li><a target="github" href="https://ok.ru/videoembed/9172270849654?autoplay=1" title="КИНО Drama" class="telezov" >
+	 <i class="icon telezov_character"></i><span></span><br>КИНО<br>DRAMA<br>КАНАЛ</a></li>
+		<li><a target="github" href="https://ok.ru/videoembed/8568599289462?autoplay=1" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>КАНАЛ<br>КИНО<br>УЖАС</a></li>
+		<li><a target="github" href="https://ok.ru/videoembed/9172283563638?autoplay=1" title="КИНОКомедия" class="zovtv" >
+	 <i class="icon zovtv_character"></i><span></span><br>КАНАЛ<br>КИНО<br>Комедия</a></li>
+		<li><a target="github" href="https://rutube.ru/play/embed/d4352753440200545f0443d6f9e11abc" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>КАНАЛ<br>HD<br>КАНАЛ</a></li>
+		<li><a target="github" href="https://ok.ru/videoembed/8938353794615?autoplay=1" class="tele3" >
+	 <i class="icon tele3_character"></i><span></span><br>ACTION<br>КИНО<br>КАНАЛ</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://stream01.vnet.am/AmediaPremium/mono.m3u8" title="Amedia Premium" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>AMEDIA<br>КИНО<br>КАНАЛ</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://cdntv.online/high/bc7shj5efa/113.m3u8" class="tele2" >
+	 <i class="icon tele2_character"></i><span></span><br>КАНАЛ<br>ONE<br>КАНАЛ</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://cdntv.online/high/x4r6t9yfc3/99.m3u8" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>КАНАЛ<br>TWO<br>КАНАЛ</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://cdntv.online/high/x4r6t9yfc3/105.m3u8" class="tele1" >
+	 <i class="icon tele1_character"></i><span></span><br>КАНАЛ<br>ONE<br>КАНАЛ</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://tochkatv-live.cdnvideo.ru/tochkatv_pub/tainatv.stream_aac.smil/playlist.m3u8" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>КАНАЛ<br>TWO<br>КАНАЛ</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://cdntv.online/high/x4r6t9yfc3/135.m3u8" class="tvzov" >
+	 <i class="icon tvzov_character"></i><span></span><br>КАНАЛ<br>FOUR<br>HD</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://stream01.vnet.am/Fox/mono.m3u8" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>КАНАЛ<br>FX<br>Сериалы</a></li>
+		<li><a target="github" href="https://ok.ru/videoembed/8352362274422?autoplay=1" title="КИНО Феникс" class="telezov" >
+	 <i class="icon telezov_character"></i><span></span><br>КИНО<br>КАНАЛ<br>Феникс</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://mfe01.cliptv.az/dash/Mir_seriala_SD12sdsdsd.ism/playlist.mpd" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>12<br>12<br>HD</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://stream01.vnet.am/DomKino/mono.m3u8" class="zovtv" >
+	 <i class="icon zovtv_character"></i><span></span><br>13<br>13<br>HD</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://stream01.vnet.am/ParamountChannel/mono.m3u8" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>14<br>Network<br>HD</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://cdntv.online/high/bc7shj5efa/411.m3u8" class="tele3" >
+	 <i class="icon tele3_character"></i><span></span><br>RUS<br>TV<br>1000</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://stream01.vnet.am/AmediaPremium/mono.m3u8" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>15<br>Family<br>HD</a></li>
+		<li><a target="github" href="https://ok.ru/videoembed/9172497931894?autoplay=1" class="tele2" >
+	 <i class="icon tele2_character"></i><span></span><br>Родное<br>KINO<br>HD</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://sirius.greenhosting.ru/Kino24Ru/video.m3u8" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>24<br>LIVE<br>HD</a></li>
+		<li><a target="github" href="https://ok.ru/videoembed/9172611112566?autoplay=1" class="tele1" >
+	 <i class="icon tele1_character"></i><span></span><br>КИНО<br>TV<br>1000</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=https://stream01.vnet.am/Fox/mono.m3u8" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>16<br>HD<br>КАНАЛ</a></li>
+		<li><a target="github" href="/tv/playerjs.html?file=ttps://stream02.vnet.am/Kinopremera/mono.m3u8" class="tvzov" >
+	 <i class="icon tvzov_character"></i><span></span><br>17Z<br>17<br>Classic</a></li>
+    <li><a href="https://rutvzov.github.io/index.html" class="zov" >
+	 <i class="icon zov_character"></i><span></span><br>BACK<br>TO<br>HOME</a></li></ul></div>
+</button>	
+				<script>
+		const clickBtn = document.getElementById("clickBtn");
+const popup = document.getElementById("popup");
+const closeBtn = document.getElementById("closeBtn");
+
+clickBtn.addEventListener('click', ()=>{
+    popup.style.display = 'block';
+});
+closeBtn.addEventListener('click', ()=>{
+    popup.style.display = 'none';
+});
+popup.addEventListener('click', ()=>{
+    popup.style.display = 'none';
+});
+		</script>
+		<script>
+const iframe = document.getElementById('myIframe');
+const main = document.getElementById('main');
+function toggleFullscreen() {
+	if (!document.fullscreenElement) {
+		// If the iframe is not currently in fullscreen mode, go fullscreen
+		iframe.requestFullscreen().catch((err) => {
+			console.error('Error attempting to enable fullscreen:', err);
+		});
+	} else {
+		// If the iframe is currently in fullscreen mode, exit fullscreen
+		document.exitFullscreen();
+	}
+}
+const da = document.getElementById('da');
+da.addEventListener('click', function () {
+	if (iframe.classList[0] !== 'ab') {
+		iframe.classList.add('ab');
+		da.innerHTML = 'Enabled ads';
+		da.style.backgroundColor = 'red';
+	} else {
+		iframe.classList.remove('ab');
+		da.innerHTML = 'Disabled ads';
+		da.style.backgroundColor = 'green';
+	}
+});
+
+</script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-252111126-1"></script>
+<script>function gtag() {
+        dataLayer.push(arguments)
+    }
+
+    window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-252111126-1")</script>
+</body>
+</html>
