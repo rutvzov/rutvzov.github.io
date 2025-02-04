@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr"><head><meta http-equiv="Permissions-Policy" content="interest-cohort=()"><meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /><meta name="robots" content="noindex, nofollow"><meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" /><meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="Copyright" content="Copyright by 30B" />
 <meta name="AUTHOR" content="3OB" />
@@ -159,45 +159,58 @@ span.i {
 	</style>
 </head>
 <body>
-	    <div id="popup">
+<div class="overlay">
+				<div class="button-bar">
+					<button id="da"></button><br/><button class="fs-btn" onclick="toggleFullscreen()">[ O ]</button>
+					<div class="close-popup" id="closeBtn"><a target="github" href="#">[ X ]</a></div>
+			</div>
+				</div>
+	<div class="ac">
+
+    <div id="popup">
         <div class="popup-container">
             <div class="popup"> 
-<div style="position: relative;padding-bottom: 56.25%; padding-top: 0px; height: 0;"><iframe name="github" id="myIframe" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" src="" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div></div>
-</div></div>
-	<button id="clickBtn" class="clickBtn"><div class="container" align="center">
-	<div class="ac"><font size="2" color="#CCCCCC" face="verdana">&nbsp;Play | смотрим твзов <a target="github" href="/tv/play.html" title="твPlay"><span style=""> &#x25c0;</span> тvPlay </a>&nbsp;<a target="github" href="/tv/seriali.html" title="Seriali"><span style="color:#ffee10"> &#x25c0;</span> сериалы </a></font></div><div class="close-popup" id="closeBtn"><a target="github" href="#">[ X ]</a></div></div><br/>
-<div align="center">		
-<div class="link"><a target="github" href="https://1tv.live/#player" title="1">&thinsp;&#9658; CH 01</a></div>
-<div class="link"><a target="github" href="/tv/1tvhd.html?autoplay=1" title="1">&thinsp;&#9658; CH 02</a></div>
-<div class="link"><a target="github" href="//ok.ru/videoembed/8822841482807?nochat=1&autoplay=1" title="1">&thinsp;&#9658; CH 03</a></div>
-<div class="link"><a target="github" href="//ok.ru/videoembed/8805166489315?nochat=1&autoplay=1" title="1">&thinsp;&#9658; CH 04</a></div>
-<div class="link"><a target="github" href="//ok.ru/videoembed/9219184139782?nochat=1&autoplay=1" title="1">&thinsp;&#9658; CH 05</a></div>
-<div class="link"><a target="github" href="//ok.ru/videoembed/9183125773899?nochat=1&autoplay=1" title="1">&thinsp;&#9658; CH 06</a></div>
-<a target="github" href="/tv/russ1.html?autoplay=1" title="1">&thinsp;&#9658; CH 07</a><a target="github" href="https://player.smotrim.ru/iframe/live/uid/cf22fa5c-e21a-433e-8317-7e8dd3150d6a/showZoomBtn/false/isPlay/true/mute/true/sid/smotrim_r1/" title="1">&thinsp;&#9658; CH 08</a><a target="github" href="https://foreverquote.xyz/brkt/t9.php" title="1">&thinsp;&#9658; CH 09</a><a target="github" href="https://foreverquote.xyz/brkt/t10.php" title="1">&thinsp;&#9658; CH 10</a><a target="github" href="https://foreverquote.xyz/brkt/t11.php" title="1">&thinsp;&#9658; CH 11</a><a target="github" href="https://foreverquote.xyz/brkt/t12.php" title="1">&thinsp;&#9658; CH 12</a>
+<div style="position: relative;padding-bottom: 56.25%; padding-top: 0px; height: 0;"><iframe name="github" id="myIframe" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" src="" scrolling="no" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></div>
+          
+        </div>
+		</div></div><button id="clickBtn">	
+	<div class="ac"><font size="2" color="#CCCCCC" face="verdana">&nbsp;Play | смотрим твзов <a target="github" href="/tv/play.html" title="твPlay"><span style=""> &#x25c0;</span> тvPlay </a>&nbsp;<a target="github" href="/tv/seriali.html" title="Seriali"><span style="color:#ffee10"> &#x25c0;</span> сериалы </a></font></div><br/>
+<div align="left">		
+<div class="link"><a target="github" href="https://1tv.live/#player" title="1">&thinsp;&#9658; CH 01</a>
+<a target="github" href="/tv/1tvhd.html?autoplay=1" title="1">&thinsp;&#9658; CH 02</a>
+<a target="github" href="//ok.ru/videoembed/8822841482807?nochat=1&autoplay=1" title="1">&thinsp;&#9658; CH 03</a>
+<a target="github" href="//ok.ru/videoembed/8805166489315?nochat=1&autoplay=1" title="1">&thinsp;&#9658; CH 04</a>
+<a target="github" href="//ok.ru/videoembed/9219184139782?nochat=1&autoplay=1" title="1">&thinsp;&#9658; CH 05</a>
+<a target="github" href="//ok.ru/videoembed/9183125773899?nochat=1&autoplay=1" title="1">&thinsp;&#9658; CH 06</a>
+<a target="github" href="/tv/russ1.html?autoplay=1" title="1">&thinsp;&#9658; CH 07</a>
+<a target="github" href="https://player.smotrim.ru/iframe/live/uid/cf22fa5c-e21a-433e-8317-7e8dd3150d6a/showZoomBtn/false/isPlay/true/mute/true/sid/smotrim_r1/" title="1">&thinsp;&#9658; CH 08</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t9.php" title="1">&thinsp;&#9658; CH 09</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t10.php" title="1">&thinsp;&#9658; CH 10</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t11.php" title="1">&thinsp;&#9658; CH 11</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t12.php" title="1">&thinsp;&#9658; CH 12</a>
 <a target="github" href="https://foreverquote.xyz/brkt/t13.php" title="1">&thinsp;&#9658; CH 13</a>
 <a target="github" href="https://foreverquote.xyz/brkt/t14.php" title="1">&thinsp;&#9658; CH 14</a>
 <a target="github" href="https://foreverquote.xyz/brkt/t15.php" title="1">&thinsp;&#9658; CH 15</a>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t16.php" title="1">&thinsp;&#9658; CH 16</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t17.php" title="1">&thinsp;&#9658; CH 17</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t18.php" title="1">&thinsp;&#9658; CH 18</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t19.php" title="1">&thinsp;&#9658; CH 19</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t20.php" title="1">&thinsp;&#9658; CH 20</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t21.php" title="1">&thinsp;&#9658; CH 21</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t22.php" title="1">&thinsp;&#9658; CH 22</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t23.php" title="1">&thinsp;&#9658; CH 23</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t24.php" title="1">&thinsp;&#9658; CH 24</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t25.php" title="1">&thinsp;&#9658; CH 25</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t26.php" title="1">&thinsp;&#9658; CH 26</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t27.php" title="1">&thinsp;&#9658; CH 27</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t28.php" title="1">&thinsp;&#9658; CH 28</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t29.php" title="1">&thinsp;&#9658; CH 29</a></div>
-<div class="link"><a target="github" href="https://foreverquote.xyz/brkt/t30.php" title="1">&thinsp;&#9658; CH 30</a></div>	
-<div class="link"><a target="github" href="https://ultratv.github.io/tv/tv.html" title="1">&thinsp;&#9658; CH TV1</a></div>
-<div class="link"><a target="github" href="https://topembed.pw/channel/SkySportsAction[UK]" title="1">&thinsp;&#9658; CH TV2</a></div>
-<div class="link"><a target="github" href="https://topembed.pw/channel/SkySportsF1[UK]" title="1">&thinsp;&#9658; CH TV3</a></div>
-<div class="link"><a target="github" href="https://topembed.pw/channel/SkySportsMainEvent[UK]" title="1">&thinsp;&#9658; CH TV4</a></div>
-<div class="link"><a target="github" href="/tv/playerjs.html?file=https://autopilot.catcast.tv/content/41331/index.m3u8" title="Hollywood" class="zov" ><i class="icon zov_character"></i><br>КИНО<br>HD<br>КАНАЛ</a></div>	
-	</div>
+<a target="github" href="https://foreverquote.xyz/brkt/t16.php" title="1">&thinsp;&#9658; CH 16</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t17.php" title="1">&thinsp;&#9658; CH 17</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t18.php" title="1">&thinsp;&#9658; CH 18</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t19.php" title="1">&thinsp;&#9658; CH 19</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t20.php" title="1">&thinsp;&#9658; CH 20</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t21.php" title="1">&thinsp;&#9658; CH 21</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t22.php" title="1">&thinsp;&#9658; CH 22</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t23.php" title="1">&thinsp;&#9658; CH 23</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t24.php" title="1">&thinsp;&#9658; CH 24</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t25.php" title="1">&thinsp;&#9658; CH 25</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t26.php" title="1">&thinsp;&#9658; CH 26</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t27.php" title="1">&thinsp;&#9658; CH 27</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t28.php" title="1">&thinsp;&#9658; CH 28</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t29.php" title="1">&thinsp;&#9658; CH 29</a>
+<a target="github" href="https://foreverquote.xyz/brkt/t30.php" title="1">&thinsp;&#9658; CH 30</a>	
+<a target="github" href="https://ultratv.github.io/tv/tv.html" title="1">&thinsp;&#9658; CH TV1</a>
+<a target="github" href="https://topembed.pw/channel/SkySportsAction[UK]" title="1">&thinsp;&#9658; CH TV2</a>
+<a target="github" href="https://topembed.pw/channel/SkySportsF1[UK]" title="1">&thinsp;&#9658; CH TV3</a>
+<a target="github" href="https://topembed.pw/channel/SkySportsMainEvent[UK]" title="1">&thinsp;&#9658; CH TV4</a></div>
+</div>	
 </button>
 				<script>
 		const clickBtn = document.getElementById("clickBtn");
