@@ -332,7 +332,7 @@ display: block;
 В ролях:Евгений Цыганов, Ольга Лерман, Артём Ткаченко, Роман Мадянов, Андрей Смирнов, Сергей Газаров..
 О фильме:Российский предприниматель Валерий Королев отправляется на Ближний Восток, в Наристан. Там происходит мощное землетрясение, в результате которого мужчина теряет память, однако со временем ему удаётся восстановить некоторые воспоминания. Но прежде чем выяснится, что это один из богатейших людей России, ему вместе с психологом МЧС Марией Стрельцовой придется спасаться от преследований спецслужб в попытке понять, кто он и зачем прибыл в Наристан.
 "><img src="https://i124.fastpic.org/big/2025/0120/de/52026a1ae34e3add26f9e32926c12dde.jpg" alt="Минута тишины">Минута тишины</a></li></ul></div>
-		<script>
+<script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -351,6 +351,18 @@ function myFunction3() {
     document.getElementById("myDropdown3").classList.toggle("show3");
 	document.getElementById("myDropdown3").style.overflow = "scroll";
 }
+//for 4rd dropdown
+
+function myFunction4() {
+    document.getElementById("myDropdown4").classList.toggle("show4");
+}
+	
+//for 5rd dropdown
+
+function myFunction5() {
+    document.getElementById("myDropdown5").classList.toggle("show5");
+}	
+	
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
@@ -388,7 +400,30 @@ window.onclick = function(event) {
         }
     }
   }
-</script>	
+	 if (!event.target.matches('.dropbtn4')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content4");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show4')) {
+            openDropdown.classList.remove('show4');
+        }
+    }
+  }
+	  if (!event.target.matches('.dropbtn5')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content5");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show5')) {
+            openDropdown.classList.remove('show5');
+        }
+    }
+  }
+}
+</script>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
