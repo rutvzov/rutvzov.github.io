@@ -46,14 +46,29 @@
         border: none; /* Remove default border */
         background: #262626; /* Just for styling */
     }
+		#first_column,
+#second_column {
+  width: 50%;
+}
+
+#first_column {
+  float:left;
+}
+
+#first_column {
+  float:right;
+}
 </style>
 </head>
-<body><div class="ac">
-<iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=10&size=large&channel=983,984,2032,18,2075,79,698,353,405,1969&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%" align="left"></iframe>
-	</div>
+<body>
+	<div id="first_column">
+	<div class="ac">
+<iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=10&size=large&channel=983,984,2032,18,2075,79,698,353,405,1969&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="100%" align="left"></iframe>
+		</div></div>
+	<div id="second_column">
 	<div class="ac" align="right">
-<iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=10&size=large&channel=644,566,542,1861,454,664,563,1039,1593,1584,2080&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%" align="right"></iframe>
-	</div>
+<iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=10&size=large&channel=644,566,542,1861,454,664,563,1039,1593,1584,2080&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="100%" align="right"></iframe>
+		</div></div>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
