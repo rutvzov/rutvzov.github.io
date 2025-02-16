@@ -6,34 +6,6 @@
 	<link href="/files/favicon.ico" rel="icon" type="image/x-icon">
 <link href="/telezov_files/smotrimtvzov.css" rel="stylesheet">	
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js"></script> 
-	    <script>
-        (function() {
-            const detectDevTools = () => {
-                const threshold = 100;
-                const check = () => {
-                    const start = performance.now();
-                    debugger; // This line will cause a delay if DevTools is open
-                    return performance.now() - start > threshold;
-                };
-
-                if (check()) {
-                    emitEvent(true);
-                }
-            };
-
-            const emitEvent = (isOpen) => {
-                console.log(`DevTools is ${isOpen ? 'open' : 'closed'}`);
-                if (isOpen) {
-                    window.location.href = "https://example.com";
-                }
-            };
-
-            setInterval(detectDevTools, 500);
-                                debugger; // This line will cause a delay if DevTools is open
-
-        })();
-    </script>
 <!-- Add the style sheet. -->
     <link id="theme" rel="stylesheet" 
         type="text/css" href="/telezov_files/main3.css" />
@@ -134,9 +106,14 @@ span.i {
         </div>
 		</div></div>
 	<div id="clickBtn">
-	<div class="ac"><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=983&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%" align="left"></iframe></div>
-	<div class="ac" align="right"><a target="github" href="//ok.ru/videoembed/8822841482807?nochat=1&autoplay=1" title="1 KANAL"><span class="i">PLAY</span></a></div></div>	
-
+	<div class="ac"><a target="github" href="//ok.ru/videoembed/8822841482807?nochat=1&autoplay=1" title="1 KANAL"><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=983&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%" align="left"></iframe></a></div>
+	</div>	
+		
+		
+		
+		
+		
+		
 			<div class="close-popup" id="closeBtn"><a target="github" href="#"></a></div>
 		<script>
 	function iframeclick() {
