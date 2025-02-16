@@ -125,17 +125,11 @@ span.i {
 }
 	.text {
   cursor:default;
-  display:inline-block;
   position:relative;
   border:2px solid #ddd;
   padding:5px;
   border-radius:3px;
   font-size:12px;
-  
-  &:hover .iframe-preview {
-    opacity:1;
-    transform: translateX(-50%) translateY(0) scale(1);
-  }
   
   &:hover {
     box-shadow: 0 1px 5px rgba(0,0,0,.1);
@@ -143,48 +137,6 @@ span.i {
   }
 }
 
-
-.iframe-preview {
-  transition:.2s ease-in-out opacity, .2s ease-in-out transform;
-  opacity:0;
-  position:absolute;
-  bottom: 110%;
-  left:50%;
-  box-shadow:0 1px 5px rgba(0,0,0,.5);
-  width:230px;
-  padding-right: 30px;
-  height:160px;
-  border:4px solid #fff;
-  overflow-x:hidden;
-  overflow-y:auto;
-  transform-origin:center bottom;
-  transform: translateX(-50%) translateY(10px) scale(.9);
-  
-  iframe {
-    transform:scale(.2);
-    transform-origin:0 0;
-  }
-}
-
-
-.disclaimer {
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,.5);
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  padding: 10px;
-  width: 50%;
-  font-size: 13px;
-  text-align:left;
-  line-height:1.25;
-  
-  strong {
-    display:block;
-    font-weight: bold;
-    margin-bottom:5px;
-  }
-}
 	</style>
 </head>
 <body>
@@ -198,7 +150,7 @@ span.i {
 		</div></div>
 	<div id="clickBtn" class="ac">
 		<span class="text">
-	 <div class="iframe-preview"><a target="github" href="//ok.ru/videoembed/8822841482807?nochat=1&autoplay=1"><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=983&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%"></iframe></a></div></span>
+	 <div><a target="github" href="//ok.ru/videoembed/8822841482807?nochat=1&autoplay=1"><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=983&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%"></iframe></a></div></span>
 	<span class="i"><a target="github" href="//ok.ru/videoembed/9721183477487?nochat=1&autoplay=1">&#8471;</a></span><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=984&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%"></iframe>
 		<div class="ac">
 	<iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=698&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%"></iframe>
