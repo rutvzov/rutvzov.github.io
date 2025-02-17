@@ -31,6 +31,77 @@
     border-radius: 10px;
     border: 3px solid #ffffff;
   }
+							.overlay {
+        position: absolute;
+        right: 4px; /* Position adjusted to the top right corner */
+        top: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+}
+		#iframe-container {
+  position: relative; 	
+  z-index: 0;
+}
+	#headerPopup{
+  width:75%;
+  margin:0 auto;
+}
+
+#headerPopup iframe{
+  width:100%;
+  margin:0 auto;
+}
+div.container { background: transparent; }
+iframe.lockframe { z-index: -2; }
+
+			.main {
+	width: 100%;
+	height: 100vh;
+	padding: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #00000050;
+	flex-direction: column;
+	opacity: 1;
+}
+
+#da,.fs-btn{
+        width: 80px; /* Reduced width from 160px to 80px */
+        height: 40px; /* Reduced height from 120px to 40px */
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+}
+.ab {
+	width: 100%;
+    height: 100%;
+	border-color: #262626;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+.fs-btn:hover{
+	background-color: #000000;
+	color:white;
+	border: 1px solid white;
+}
+#da:hover{
+	color:white;
+	border: 1px solid white;
+}
+.button-bar{
+	
+}
 		#popup{
     display: none;
 }
@@ -93,6 +164,27 @@ span.i {
   color: #888664; font-family: "DejaVu Sans", "Trebuchet MS";
   font-size:200%; letter-spacing:2px; padding: 0px 20px 20px; float: left;
 }
+	  table {
+
+    border-collapse: collapse;
+
+  }
+
+  td.1{
+
+    border: 0px solid #262626;
+width: 90%;
+    padding: 0px;
+
+  }
+	td.2{
+
+    border: 0px solid #262626;
+width: 10%;
+    padding: 10px;
+		float: left;
+
+  }
 	</style>
 </head>
 <body>
@@ -104,8 +196,20 @@ span.i {
           
         </div>
 		</div></div>
-	<div id="clickBtn">
-	<div class="ac"><p><a target="github" href="//ok.ru/videoembed/8822841482807?nochat=1&autoplay=1"><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=983&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%"></iframe><span class="i">&#10148;</span></a></p></div><br/>
+	<div id="clickBtn">	<div class="close-popup" id="closeBtn"><a target="github" href="#"></a></div>
+	<table>
+  <tr>
+    <td class="1"><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=983&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%"></iframe></td>
+	  <td class="2"><a target="github" href="//ok.ru/videoembed/8822841482807?nochat=1&autoplay=1"><span class="i">&#10148;</span></a></td>
+  </tr>	
+	 <tr>
+    <td class="1"><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=984&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%"></iframe></td>	
+    <td class="2"><a target="github" href="//ok.ru/videoembed/9415021305350?nochat=1&autoplay=1"><span class="i">&#10148;</span></a></td>
+  </tr>
+</table>	
+		
+		
+
     <div class="ac"><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=984&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%"></iframe><a target="github" href="//ok.ru/videoembed/9415021305350?nochat=1&autoplay=1"><span class="i">&#10148;</span></a></div><br/>
 	<div class="ac"><a target="github" href="//ok.ru/videoembed/9407108882007?nochat=1&autoplay=1"><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=698&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%"></iframe><span class="i">&nbsp;PLAY</span></a></div><br/>	
 	<div class="ac"><a target="github" href="//ok.ru/videoembed/8822841482807?nochat=1&autoplay=1"><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=2075&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%"></iframe><span class="i">&nbsp;PLAY</span></a></div><br/>		
@@ -128,7 +232,6 @@ span.i {
 	<div class="ac"><a target="github" href="//ok.ru/videoembed/8822841482807?nochat=1&autoplay=1"><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=1039&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%" align="left"></iframe><span class="i">&nbsp;PLAY</span></a></div><br/>
 	<div class="ac"><a target="github" href="//ok.ru/videoembed/8822841482807?nochat=1&autoplay=1"><iframe src="//s.prtv.su/informers/tv/tv_informer.php?max=3&size=small&channel=2073&category=&transpar=1&color_fon=%23262626&color_font=%23ebebeb&font_family=El+Messiri" frameborder="0" scrolling="no" width="50%" height="50%" align="left"></iframe><span class="i">&nbsp;PLAY</span></a></div><br/></div>
 		
-			<div class="close-popup" id="closeBtn"><a target="github" href="#"></a></div>
 		<script>
 	function iframeclick() {
 document.getElementById("myIframe").contentWindow.document.body.onclick = function() {
@@ -162,4 +265,32 @@ popup.addEventListener('click', ()=>{
     }
 
     window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-252111126-1")</script>
+					<script>
+const iframe = document.getElementById('iframe-container');
+const main = document.getElementById('main');
+function toggleFullscreen() {
+	if (!document.fullscreenElement) {
+		// If the iframe-container is not currently in fullscreen mode, go fullscreen
+		iframe.requestFullscreen().catch((err) => {
+			console.error('Error attempting to enable fullscreen:', err);
+		});
+	} else {
+		// If the iframe-container is currently in fullscreen mode, exit fullscreen
+		document.exitFullscreen();
+	}
+}
+const da = document.getElementById('da');
+da.addEventListener('click', function () {
+	if (iframe.classList[0] !== 'ab') {
+		iframe.classList.add('ab');
+		da.innerHTML = 'Enabled ads';
+		da.style.backgroundColor = 'red';
+	} else {
+		iframe.classList.remove('ab');
+		da.innerHTML = 'Disabled ads';
+		da.style.backgroundColor = 'green';
+	}
+});
+
+</script>
 </body></html>
